@@ -1,0 +1,24 @@
+spring.application.name=BOOK_API
+
+server.port=8080
+
+# Reactive Programming
+# JPA
+spring.r2dbc.url=r2dbc:mysql://mysqldb:3306/database_name
+spring.r2dbc.username=username
+spring.r2dbc.password=password
+
+# Hibernate Properties
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.show-sql=true
+
+# Enable debug logs for troubleshooting
+#logging.level.org.springframework=DEBUG
+
+# Enable detailed R2DBC logging
+logging.level.io.r2dbc=DEBUG
+logging.level.org.springframework.r2dbc=DEBUG
+
+# OpenAPI
+spring.doc.swagger-ui.path=/swagger-ui.html

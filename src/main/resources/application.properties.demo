@@ -1,0 +1,27 @@
+spring.application.name=BOOK_API
+
+server.port=8080
+
+# Reactive Programming
+# JPA
+# Reactive web     1)manually create the table in DB    2)use config bean
+spring.r2dbc.url=r2dbc:mysql://localhost:3306/database_name
+spring.r2dbc.username=username
+spring.r2dbc.password=password
+
+# Hibernate Properties
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto=none
+#spring.jpa.show-sql=true
+
+# Enable debug logs for troubleshooting
+#logging.level.org.springframework=DEBUG
+
+# Enable detailed R2DBC logging
+#logging.level.io.r2dbc=DEBUG
+#logging.level.org.springframework.r2dbc=DEBUG
+
+# OpenAPI
+spring.doc.swagger-ui.path=/swagger-ui.html
+
+#spring.profiles.active=docker
